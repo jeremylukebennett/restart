@@ -1,4 +1,164 @@
-#test_paragraph {
-    color: lime;
-    font-size: 40px;
+@import url("https://use.typekit.net/nre7coe.css");
+
+
+
+
+* {
+	font-family: europa, futura, sans-serif;
+}
+
+
+
+#chorda_hero_section {
+    background-image: url("https://cdn.shopify.com/s/files/1/0229/7157/files/gabbi_chorda_extended.jpg?v=1701726167");
+    background-repeat: no-repeat;
+    background-color: #00fbf7;
+    padding: 10px;
+    background-size: clamp(500px, 150%, 1200px);
+    background-position: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+
+#chorda_hero_container {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 2180 / 1800;
+    /* Mobile aspect ratio */
+    width: 100%;
+    /* Adjust as needed */
+    min-height: 0;
+    /* Important for aspect ratio to work correctly */
+    /* Additional styling for your content container */
+    max-height: 550px;
+}
+
+#chorda_hero_info_container {
+    margin-bottom: 10px;
+}
+
+#chorda_hero_info_container h2 {
+    margin: 0em;
+    font-size: calc(clamp(1.543rem, 6.856vw, 6.856vw) + 20px);
+    color: black;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+}
+
+#chorda_hero_subhead {
+    font-size: 20px;
+    margin: 5px 0em;
+    color: black;
+    max-width: 60vw;
+    font-size: clamp(1.2rem, 3.856vw, 2.5rem);
+}
+
+.chorda_hero_price_tag {
+    margin: 0em;
+    font-size: clamp(2rem, 3.856vw, 3.856rem);
+    color: black;
+}
+
+.chorda_hero_price_tag::after {
+    content: ".99";
+    vertical-align: super;
+    font-size: 14px;
+}
+
+#chorda_hero_buttons_container {
+    height: 100%;
+}
+
+#chorda_hero_buy_button {
+    color: black;
+    background-color: white;
+    border: solid black 1.5px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 25px;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 100ms;
+    text-align: center;
+    max-width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Horizontal offset, Vertical offset, Blur radius, Spread radius, Color */
+}
+
+#chorda_hero_buy_button:hover {
+    opacity: 0.6;
+    transition: 200ms;
+}
+
+#chorda_hero_buy_button:active {
+    opacity: 0.3;
+    transition: 0ms;
+}
+
+/*------------------------------------------------------------------------------------ BREAKPOINTS START ---------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------- Extra small devices (phones, 480px and down) -------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    .marked {
+        border: solid blue;
+    }
+}
+
+/* -----------------------------------------------------------------Small devices (portrait tablets and large phones, 480px and up)------------------------------------------------ */
+@media only screen and (min-width: 480px) {
+    .marked {
+        border: solid red;
+    }
+}
+
+/*----------------------------------------------------------------------- Medium devices (landscape tablets, 768px and up) ---------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    .marked {
+        border: solid yellow;
+    }
+
+   
+}
+
+/*------------------------------------------------------------------------ Large devices (laptops/desktops, 992px and up) ----------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+    .marked {
+        border: solid deeppink;
+    }
+
+    #chorda_hero_container {
+        aspect-ratio: 3600 / 1800;
+        /* Default aspect ratio */
+        max-height: unset;
+    }
+
+    #chorda_hero_section {
+        background-repeat: no-repeat;
+        background-color: #00fbf7;
+        background-size: clamp(500px, 150%, 2500px);
+        background-position: 100% 50%;
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* ------------------------------------------------------------------Extra large devices (large laptops and desktops, 1200px and up) ------------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+    .marked {
+        border: solid lime;
+    }
+}
+
+/* ------------------------------------------------------------------Extra extra large devices (large laptops and desktops, 1500px and up) ------------------------------------------------*/
+@media only screen and (min-width: 1500px) {
+    .marked {
+        border: solid darkorange;
+    }
 }
